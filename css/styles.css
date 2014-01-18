@@ -16,6 +16,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color:#3e3e3e;
 	font-family:'Open Sans', Verdana, sans-serif;
+	text-shadow:1px 1px 0 #fff;
 }
 strong {font-weight: bold;}
 .wrapper {
@@ -25,6 +26,8 @@ strong {font-weight: bold;}
 }
 
 a.btn {
+	font:600 16px/22px 'Open Sans', Verdana, sans-serif;
+	text-shadow:1px 1px 0 #333;
 	display:inline-block;
 
 	-webkit-border-radius: 8px;
@@ -67,8 +70,11 @@ a.btn:hover {
 .shadow {
 	box-shadow:inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
 }
-.texture {
+.portfolioTexture {
 	background:#fafafa url(../images/texture-bg.png) repeat top left scroll;
+}
+.workTexture {
+	background:#f4f4f4 url(../images/texture-bg.png) repeat top left scroll;
 }
 /* *********************** COMMON: END ******************/
 
@@ -163,11 +169,16 @@ a.btn:hover {
 
 /* *********************** PORT AREA: START ******************/
 #portfolioContainer {
-	padding-top:100px;
 	min-height: 500px;
+	padding-top:100px;
+	text-align: center;
+	padding-bottom:60px;
 }
 
 .portfolio h2 {
+	font-size:24px;
+	font-weight: 600;
+	line-height: 32px;
 	text-align: center;
 }
 .portfolio > p {
@@ -176,15 +187,79 @@ a.btn:hover {
 .portfolioItem {
 	background-color: #fff;
 	border:1px solid #ccc;
+	float:left;
+	margin:20px 8px;
+	padding:20px;
+	text-align: center;
+	width:260px;
 }
 .portfolioItem h3 {
-	font-weight: 600;
-	line-height: 40px;
+	font-size:24px;
+	font-weight: 700;
+	line-height: 32px;
 	text-align: center;
 }
+.portfolioItem p {
+	font-size:16px;
+	line-height: 24px;
+	font-weight:300;
+	text-shadow:1px 1px 0 #fff;
+}
 
-.fa-comments-o, .fa-file-o, .fa-thumbs-o-up {color:#ea8a95;}
-/* *********************** HERO AREA: END ******************/
+.fa-comments-o, .fa-file-o, .fa-thumbs-o-up {color:#ea8a95; padding-bottom:20px;}
+/* *********************** PORT AREA: END ******************/
+
+/* *********************** WORK AREA: START ******************/
+#workContainer {
+	text-align: center;
+	padding-bottom:60px;
+}
+#workContainer .row {width:100%; display: block;}
+.work {
+	padding-top:60px;
+}
+.work h2 {
+	font-size:24px;
+	font-weight: 600;
+	line-height: 32px;
+	text-align: center;
+	text-shadow:1px 1px 0 #fff;
+}
+.work p {
+	font-size:16px;
+	line-height: 24px;
+	font-weight:300;
+	text-shadow:1px 1px 0 #fff;
+}
+.workItem {
+	background-color: #fff;
+	border:1px solid #ccc;
+	float:left;
+	text-align: center;
+	margin:40px 8px;
+}
+.workItem img {width:300px; margin-bottom:10px;}
+.workItem h3 a:link, .workItem h3 a:visited {
+	font-size:24px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+	color:#3e3e3e;
+	text-decoration: none;
+}
+.workItem h3 a:hover, .workItem h3 a:active {
+	color:#666;
+}
+.workItem p {
+	font-size:14px;
+	line-height: 20px;
+	font-weight:300;
+	text-shadow:1px 1px 0 #fff;
+/* *********************** WORK AREA: END ********************/
+
+/* *********************** FOOTER AREA: START ******************/
+
+/* *********************** FOOTER AREA: END ********************/
 
 
 
