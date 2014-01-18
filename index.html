@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 	<title>Jane Doe</title>
 </head>
 <body>
 
-<nav id="nav" class="clearfix">
+<nav id="nav">
 	<ul>
 		<li><a href="">Top</a></li>
 		<li><a href="">Work</a></li>
@@ -17,44 +19,46 @@
 		<li><a href="">Contact</a></li>
 	</ul>
 </nav>
-<!-- <br class="clear" /> -->
-<div class="container_12">
-	<div id="heroContainer">
-		<article class="hero clearfix">
-			<div class="heroImage">
-				<img src="images/jane.jpg" width="355" height="355" border="0" />
+<div class="wrapper">
+	<div id="heroContainer" class="container_12 clearfix">
+		<article>
+			<div class="heroImage grid_4">
+				<img src="images/me.jpg" width="355" height="355" border="0" />
 			</div>
-			<div class="heroContent">
+			<div class="heroContent grid_7">
 				<h1>Hi. I&rsquo;m <strong>Jane Doe</strong>, YO!</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum veritatis recusandae ullam voluptas earum error natus aspernatur nisi incidunt rem animi iusto labore. Ea, sequi labore distinctio maiores omnis.</p>
 				<a href="" class="btn">Learn about what I do</a>
 			</div>
 		</article>
 	</div>
-	
-	<div id="portfolioContainer">
-		<article class="portfolio">
-			<h2>I design and build amazing things.</h2>
-			<p>Odio turpis amet sed consequat eget posuere consequat.</p>
-			<div class="portfolioItem grid_4">
-				<img src="images/portfolio01.jpg" alt="" />
-				<h3><a href="#">Item Title</a></h3>
-				<p>Item Description</p>
-			</div>
-			<div class="portfolioItem grid_4">
-				<img src="images/portfolio02.jpg" alt="" />
-				<h3><a href="#">Item Title</a></h3>
-				<p>Item Description</p>
-			</div>
-			<div class="portfolioItem grid_4">
-				<img src="images/portfolio03.jpg" alt="" />
-				<h3><a href="#">Item Title</a></h3>
-				<p>Item Description</p>
-			</div>
-		</article>
-	<br class="clear" />
+</div>
+<div class="wrapper shadow texture">
+	<div id="portfolioContainer" class="container_12 clearfix">
+			<article class="portfolio">
+				<h2>I design and build amazing things.</h2>
+				<p>Odio turpis amet sed consequat eget posuere consequat.</p>
+				<div class="portfolioItem grid_4 alpha">
+					<i class="fa fa-comments-o fa-7x"></i>
+					<h3>Item Title</h3>
+					<p>Item Description</p>
+				</div>
+				<div class="portfolioItem grid_4">
+					<i class="fa fa-file-o fa-7x"></i>
+					<h3>Item Title</h3>
+					<p>Item Description</p>
+				</div>
+				<div class="portfolioItem grid_4 omega">
+					<i class="fa fa-thumbs-o-up fa-7x"></i>
+					<h3>Item Title</h3>
+					<p>Item Description</p>
+				</div>
+			</article>
+		</div>
 	</div>
-	<div id="footerContainer">
+</div>
+<div class="wrapper">
+	<div id="footerContainer" class="container_12 clearfix">
 		<h2>Want to hire me? Get in touch!</h2>
 	</div>
 

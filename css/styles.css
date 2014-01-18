@@ -3,37 +3,91 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 /*CSS Reset - End */
 
-/* Other - Start */
-.clear {clear:both;}
 
-.clearfix:after { 
-  content: "."; 
-  display: block; 
-  height: 0; 
-  clear: both; 
-  visibility: hidden; 
-}
-.clearfix { 
-  display: inline-block;  
-}
-* html .clearfix {  
-  height: 1%;  
-} /* Hides from IE-mac \*/
-.clearfix {  
-  display: block;  
-}
-/* Other - End */
-
+/* *********************** COMMON: START ******************/
 body {
 	background-color:#fff;
 }
+p {
+	margin:20px 0;
+	font:300 14px/24px 'Open Sans' Verdana, sans-serif;
+	color:#888;
+}
+h1, h2, h3, h4, h5, h6 {
+	color:#3e3e3e;
+	font-family:'Open Sans', Verdana, sans-serif;
+}
+strong {font-weight: bold;}
+.wrapper {
+	margin:0;
+	padding:0;
+	width:100%;
+}
 
+a.btn {
+	display:inline-block;
+
+	-webkit-border-radius: 8px;
+        	border-radius: 8px;
+        	border:1px solid #125a83;
+ 
+	background-clip: padding-box;
+
+  	-webkit-box-shadow: 0px 0px 4px 0px #4d4d4d;
+          	box-shadow: 0px 0px 4px 0px #4d4d4d;
+
+
+	background: #5bb3d8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5bb3d8 0%, #3390c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5bb3d8), color-stop(100%,#3390c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5bb3d8 0%,#3390c5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bb3d8', endColorstr='#3390c5',GradientType=0 ); /* IE6-9 */
+
+	color:#fff;
+	padding:16px 26px;
+	text-decoration: none;
+}
+
+a.btn:hover {
+
+	background: #81d3f5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #81d3f5 0%, #51ace0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#81d3f5), color-stop(100%,#51ace0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #81d3f5 0%,#51ace0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #81d3f5 0%,#51ace0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #81d3f5 0%,#51ace0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #81d3f5 0%,#51ace0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81d3f5', endColorstr='#51ace0',GradientType=0 ); /* IE6-9 */
+
+	color:#fff;
+}
+.shadow {
+	box-shadow:inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+}
+.texture {
+	background:#fafafa url(../images/texture-bg.png) repeat top left scroll;
+}
+/* *********************** COMMON: END ******************/
+
+/* *********************** FONTAWESOME: START**************** */
+.fa-6x {font-size:6em;}
+.fa-7x {font-size:7em;}
+.fa-8x {font-size:8em;}
+.fa-9x {font-size:9em;}
+.fa-10x {font-size:10em;}
+/* *********************** FONTAWESOME: END**************** */
+
+/* *********************** NAV AREA: START ***************** */
 #nav {
 	background-color: #282828;
-	height:60px;
 	font:300 16px/20px 'Open Sans', Verdana, sans-serif;
-	position:fixed;
+	height:60px;
 	left:0;
+	margin:0;
+	position:fixed;
 	top:0;
 	width:100%;
 }
@@ -49,106 +103,88 @@ body {
 #nav li {
 	display:inline;
 	float:left;
+	padding:0 10px;
 }
 #nav a:link {
 	color:#fff; 
-	text-decoration: none;
 	display: block;
-	padding:20px;
 	height:20px;
+	margin:10px 0 0 0;
+	padding:10px 20px;
+	text-decoration: none;
 }
 #nav a:visited, nav a:active {color:#eee;}
-#nav a:hover {color:#ccc; background-color:#333;}
-#heroContainer {
-	box-shadow:inset 0 0 2px 0 rgba(0,0,0,0.05);
-	background:#fff;
-	margin:85px 0;
-	
+#nav a:hover {
+	color:#ccc; 
+	background-color:#333;
+	border-radius: 5px;
 }
-.wrapper {
-	margin:0 auto;
-	/*width:960px;*/
-}
-article {display:block;}
 
-.hero {	
-	width:960px;
+
+/* *********************** NAV AREA: END ******************/
+
+/*I was using the hero class on the article within heroContainer*/
+/*.hero {	
 	margin-left: auto;
 	margin-right: auto;
+	width:960px;
+}*/
+
+/* *********************** HERO AREA: START ******************/
+
+#heroContainer {
+	padding:150px 0 100px;
+	
 }
 
 .heroImage {
 	width:355px;
-	float:left;
-	vertical-align: center;
+}
+.heroImage img {
+	height: 98%;
+	width:98%;
+	border-radius: 150px;
 }
 
 .heroContent {
+	margin:50px 0 0 50px;
 	width: 500px;
-	float:left;
-	margin:130px 0 0 50px;
 }
 
 .heroContent h1 {
-	color:#3e3e3e;
-	font:normal 28px/34px Verdana, sans-serif;
-}
-.heroContent p {
-	font:normal 14px/20px Verdana, sans-serif;
-	color:#888;
+	
+	font:300 32px/40px 'Open Sans', Verdana, sans-serif;
 }
 
-.btn {
-
-	-webkit-border-radius: 8px;
-        	border-radius: 8px;
-        	border:1px solid #125a83;
- 
-	background-clip: padding-box;
-
-
-  -webkit-box-shadow: 0px 0px 4px 0px #4d4d4d;
-          box-shadow: 0px 0px 4px 0px #4d4d4d;
-
-
-	background: #5bb3d8; /* Old browsers */
-	background: -moz-linear-gradient(top,  #5bb3d8 0%, #3390c5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5bb3d8), color-stop(100%,#3390c5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #5bb3d8 0%,#3390c5 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #5bb3d8 0%,#3390c5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bb3d8', endColorstr='#3390c5',GradientType=0 ); /* IE6-9 */
-
-	padding:16px 26px;
-	color:#fff;
-	text-decoration: none;
-	float:left;
-	margin:60px 0 0 0;
+.heroContent .btn {
+	margin:10px 0 0 0;
 }
+/* *********************** HERO AREA: END ******************/
+
+/* *********************** PORT AREA: START ******************/
 #portfolioContainer {
-	background:url(../images/texture-bg.png) repeat top left scroll;
-	border:1px solid #ccc;
+	padding-top:100px;
 	min-height: 500px;
 }
-.portfolio {
-	
-}
+
 .portfolio h2 {
-	color:#3e3e3e;
-	font:700 32px/40px 'Open Sans', Verdana, sans-serif;
 	text-align: center;
 }
-.portfolio p {
-	color:#000;
-	font:normal 14px/20px Verdana, sans-serif;
+.portfolio > p {
 	text-align: center;
 }
-.portfolioItem img {
-	height:80%;
-	width:80%; 
+.portfolioItem {
+	background-color: #fff;
+	border:1px solid #ccc;
+}
+.portfolioItem h3 {
+	font-weight: 600;
+	line-height: 40px;
+	text-align: center;
 }
 
+.fa-comments-o, .fa-file-o, .fa-thumbs-o-up {color:#ea8a95;}
+/* *********************** HERO AREA: END ******************/
 
 
 
