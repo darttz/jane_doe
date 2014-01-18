@@ -76,6 +76,9 @@ a.btn:hover {
 .workTexture {
 	background:#f4f4f4 url(../images/texture-bg.png) repeat top left scroll;
 }
+.footerTexture {
+	background:#303030 url(../images/texture-bg.png) repeat top left scroll;
+}
 /* *********************** COMMON: END ******************/
 
 /* *********************** FONTAWESOME: START**************** */
@@ -169,7 +172,6 @@ a.btn:hover {
 
 /* *********************** PORT AREA: START ******************/
 #portfolioContainer {
-	min-height: 500px;
 	padding-top:100px;
 	text-align: center;
 	padding-bottom:60px;
@@ -255,10 +257,62 @@ a.btn:hover {
 	line-height: 20px;
 	font-weight:300;
 	text-shadow:1px 1px 0 #fff;
+}
 /* *********************** WORK AREA: END ********************/
 
 /* *********************** FOOTER AREA: START ******************/
-
+/* .*@.*(edu|com|net|org) */
+/* sample 'pattern' for email field */
+#footerContainer {
+	text-align: center;
+	padding:60px 0;
+}
+#footerContainer h2 {
+	font-size:24px;
+	line-height: 32px;
+	color:#fff;
+	text-shadow:none;
+	font-weight: 600;
+}
+#footerContainer p {
+	font-size:16px;
+	line-height: 24px;
+}
+/* |||*********FORM STYLES: START ***********||| */
+form input, form select, form textarea {
+	-webkit-appearance:none;
+}
+input {
+	border:0;
+	padding:12px;
+	font-size:16px;
+	border-radius: 8px;
+	background:#282828;
+	color:#bbb;
+	box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), rgba(255,255,255,0.025);
+	/*width:100%;*/
+	-moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+	-webkit-transition:background .2s ease-in-out, box-shadow .2s ease-in-out;
+		-webkit-transition-property:background, box-shadow;
+		-webkit-transition-duration: 0.2s, 0.2s;
+		-webkit-transition-timing-function:ease-in-out, ease-in-out;
+		-webkit-transition-delay:initial, initial;
+		-o-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+	transition:background .2s ease-in-out, box-shadow .2s ease-in-out;
+		-transition-property:background, box-shadow;
+		-transition-duration: 0.2s, 0.2s;
+		-transition-timing-function:ease-in-out, ease-in-out;
+		-transition-delay:initial, initial;
+}
+input.half {width:50%;}
+/*input[type='text'] {
+	background:black;
+}*/
+.container_12 input.grid_6 {
+	width:436px;
+}
+/* |||*********FORM STYLES: END *************||| */
 /* *********************** FOOTER AREA: END ********************/
 
 
