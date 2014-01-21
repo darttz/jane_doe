@@ -28,7 +28,7 @@
 			<div class="heroContent grid_7">
 				<h1>Hi. I&rsquo;m <strong>Jane Doe</strong>, YO!</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, dolorum veritatis recusandae ullam voluptas earum error natus aspernatur nisi incidunt rem animi iusto labore. Ea, sequi labore distinctio maiores omnis.</p>
-				<a href="" class="btn">Learn about what I do</a>
+				<a href="" class="blueBtn">Learn about what I do</a>
 			</div>
 		</article>
 	</div>
@@ -55,7 +55,7 @@
 			</div>
 		</article>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<a href="#" class="btn">See some of my recent work</a>
+		<a href="#" class="blueBtn">See some of my recent work</a>
 	</div>
 </div>
 <div class="wrapper shadow workTexture">
@@ -99,7 +99,7 @@
 			</div>
 		</article>
 		<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-		<a href="" class="btn">Get in touch with me</a>
+		<a href="" class="blueBtn">Get in touch with me</a>
 	</div>
 </div>
 <div class="wrapper shadow footerTexture">
@@ -109,7 +109,13 @@
 
 		<form action="#" method="post" name="footerForm">
 			<input type="text" name="name" placeholder="Name" class="grid_6" />
-			<input type="email" name="email" placeholder="Email" class="grid_6" />
+			<input type="email" name="email" placeholder="Email" class="grid_6" pattern=".*@.*(com|edu|org|net|co|info)" />
+			<input type="text" name="subject" placeholder="Subject" class="grid_12" />
+			<textarea name="message" placeholder="Message" class="grid_12"></textarea>
+			<!-- <a href="#" name="submit" class="blueBtn formBtn" onclick="javascript:submit();">Send Message</a> -->
+			<!-- <a href="#" name="reset" class="grayBtn formBtn">Clear Form</a> -->
+			<input type="submit" name="submit" value="Send Message" />
+			<input type="reset" name="reset" value="Clear Form">
 		</form>
 	</div>
 </div>

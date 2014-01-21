@@ -25,7 +25,7 @@ strong {font-weight: bold;}
 	width:100%;
 }
 
-a.btn {
+a.blueBtn, input[type=submit] {
 	font:600 16px/22px 'Open Sans', Verdana, sans-serif;
 	text-shadow:1px 1px 0 #333;
 	display:inline-block;
@@ -52,9 +52,10 @@ a.btn {
 	color:#fff;
 	padding:16px 26px;
 	text-decoration: none;
+	cursor:pointer;
 }
 
-a.btn:hover {
+a.blueBtn:hover, input[type=submit]:hover {
 
 	background: #81d3f5; /* Old browsers */
 	background: -moz-linear-gradient(top,  #81d3f5 0%, #51ace0 100%); /* FF3.6+ */
@@ -64,6 +65,49 @@ a.btn:hover {
 	background: -ms-linear-gradient(top,  #81d3f5 0%,#51ace0 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #81d3f5 0%,#51ace0 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81d3f5', endColorstr='#51ace0',GradientType=0 ); /* IE6-9 */
+
+	color:#fff;
+}
+a.grayBtn, input[type=reset] {
+	font:600 16px/22px 'Open Sans', Verdana, sans-serif;
+	text-shadow:1px 1px 0 #333;
+	display:inline-block;
+
+	-webkit-border-radius: 8px;
+        	border-radius: 8px;
+        	border:1px solid #000;
+ 
+	background-clip: padding-box;
+
+  	-webkit-box-shadow: 0px 0px 4px 0px #4d4d4d;
+          	box-shadow: 0px 0px 4px 0px #4d4d4d;
+
+
+	background: #3f3f3f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3f3f3f 0%, #303030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3f3f), color-stop(100%,#303030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3f3f3f 0%,#303030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3f3f3f 0%,#303030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3f3f3f 0%,#303030 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3f3f3f 0%,#303030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+
+	color:#fff;
+	padding:16px 26px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+a.grayBtn:hover, input[type=reset]:hover {
+
+	background: #606060; /* Old browsers */
+	background: -moz-linear-gradient(top,  #606060 0%, #424242 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#606060), color-stop(100%,#424242)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #606060 0%,#424242 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #606060 0%,#424242 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #606060 0%,#424242 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #606060 0%,#424242 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#424242',GradientType=0 ); /* IE6-9 */
 
 	color:#fff;
 }
@@ -281,8 +325,9 @@ a.btn:hover {
 /* |||*********FORM STYLES: START ***********||| */
 form input, form select, form textarea {
 	-webkit-appearance:none;
+	margin:8px 0;
 }
-input {
+input, textarea {
 	border:0;
 	padding:12px;
 	font-size:16px;
@@ -305,12 +350,19 @@ input {
 		-transition-timing-function:ease-in-out, ease-in-out;
 		-transition-delay:initial, initial;
 }
-input.half {width:50%;}
-/*input[type='text'] {
-	background:black;
-}*/
+
 .container_12 input.grid_6 {
 	width:436px;
+}
+.container_12 input.grid_12, .container_12 textarea.grid_12 {
+	width:916px;
+}
+.container_12 textarea.grid_12 {
+	min-height: 200px
+}
+textarea {margin-bottom:6px;}
+.formBtn {
+	margin:8px;
 }
 /* |||*********FORM STYLES: END *************||| */
 /* *********************** FOOTER AREA: END ********************/
